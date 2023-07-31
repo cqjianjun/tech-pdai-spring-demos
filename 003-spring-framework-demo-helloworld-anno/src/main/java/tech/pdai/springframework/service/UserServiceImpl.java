@@ -7,6 +7,8 @@ import org.springframework.stereotype.Service;
 import tech.pdai.springframework.dao.UserDaoImpl;
 import tech.pdai.springframework.entity.User;
 
+import javax.annotation.Resource;
+
 /**
  * @author pdai
  */
@@ -17,6 +19,7 @@ public class UserServiceImpl {
      * user dao impl.
      */
     @Autowired
+//    @Resource
     private UserDaoImpl userDao;
 
     /**

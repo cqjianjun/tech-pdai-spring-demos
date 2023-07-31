@@ -13,6 +13,8 @@ import org.springframework.web.bind.annotation.RestController;
 import tech.pdai.springboot.h2.entity.User;
 import tech.pdai.springboot.h2.service.UserService;
 
+import javax.annotation.Resource;
+
 /**
  * @author pdai
  */
@@ -20,7 +22,8 @@ import tech.pdai.springboot.h2.service.UserService;
 @RequestMapping("/user")
 public class UserController {
 
-    @Autowired
+//    @Autowired()
+    @Resource(name="userServiceImpl2")
     private UserService userService;
 
     /**
